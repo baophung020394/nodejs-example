@@ -14,6 +14,8 @@ block content
             th Name
             th Phone
             th Actions
+            th Email
+            th Password
 
         each user in users 
             tr
@@ -21,3 +23,5 @@ block content
                 td= user.phone
                 td
                     a.btn.btn-light(href='/users/' + user.id) View
+                td= user.email
+                td= user.password
